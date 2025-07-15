@@ -10,6 +10,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY requirements.txt /app/
+RUN npm install
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
